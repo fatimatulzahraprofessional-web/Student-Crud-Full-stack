@@ -1,0 +1,103 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #d8b4fe, #fbcfe8, #c7d2fe);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #7c3aed;
+  margin-bottom: 1.5rem;
+}
+
+form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #d8b4fe;
+  outline: none;
+  font-size: 1rem;
+}
+
+form input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.3);
+}
+
+button.add-btn {
+  width: 100%;
+  background: linear-gradient(90deg, #7c3aed, #ec4899);
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+button.add-btn:hover {
+  transform: scale(1.05);
+}
+
+.student-list {
+  margin-top: 2rem;
+}
+
+.student-card {
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.student-card .info {
+  color: #4c1d95;
+}
+
+.student-card button {
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.student-card button.edit {
+  background: #facc15;
+  color: white;
+}
+
+.student-card button.edit:hover {
+  transform: scale(1.1);
+  background: #eab308;
+}
+
+.student-card button.delete {
+  background: #ef4444;
+  color: white;
+}
+
+.student-card button.delete:hover {
+  transform: scale(1.1);
+  background: #dc2626;
+}
